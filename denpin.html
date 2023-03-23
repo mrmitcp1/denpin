@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class pin {
+        energy = 100;
+        setPin(num) {
+            this.energy = num;
+        }
+        getPin() {
+            return this.energy;
+        }
+        haoPin() {
+            if (this.energy > 0) {
+                this.energy--
+            }
+            return this.energy;
+        }
+    }
+
+    class denPin {
+        STT = false;
+        pinDenPin = new pin();
+        constructor() {
+        }
+        setpinDenPin(pin){
+            this.pinDenPin = pin
+        }
+        getpinDenPin(){
+            return this.pinDenPin
+        }
+        setOn(){
+            if (this.pinDenPin > 0) {
+                this.STT = true
+                alert('on now')
+            }
+        }
+        setOff() {
+            if (this.pinDenPin <= 0) {
+                this.STT = false
+                alert('off now')
+            }
+        }
+    }
+    let denpin = new denPin()
+    denpin.setpinDenPin(0)
+    denpin.setOff()
+
+</script>
